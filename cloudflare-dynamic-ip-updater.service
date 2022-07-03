@@ -1,0 +1,8 @@
+[Unit]
+Description=Updates Cloudflare on local public IP changes.
+
+[Service]
+ExecStart=$HOME/.cargo/bin/cloudflare-dynamic-ip-updater
+
+[Install]
+WantedBy=default.target
